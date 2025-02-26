@@ -1,9 +1,10 @@
+
 [
   {
     "platform": "Windows 10",
     "browserName": "chrome",
     "version": "latest",
-    "build": "Behave Selenium Sample new",
+    "build": "${LT_BUILD_NAME}",
     "name": "Behave Sample Test new"
   }
 ]
