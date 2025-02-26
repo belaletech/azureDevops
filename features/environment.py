@@ -41,7 +41,7 @@ def before_scenario(context, scenario):
         else:
             raise ValueError("Unsupported browser tag")
 
-        options.set_capability('build', desired_cap.get('build'))
+        options.set_capability('build', os.getenv("BUILD_NAME", desired_cap.get('build')))
         options.set_capability('name', desired_cap.get('name'))
 
         # Print options for debugging
