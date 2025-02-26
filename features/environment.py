@@ -5,6 +5,8 @@ from selenium.webdriver.firefox.options import Options as FirefoxOptions
 from selenium.webdriver.edge.options import Options as EdgeOptions
 import os
 import json
+print(f'LT_BUILD_NAME: {os.environ.get("LT_BUILD_NAME")}')
+
 
 INDEX = int(os.environ['INDEX']) if 'INDEX' in os.environ else 0
 #✅ Fix: Handle missing LT_BUILD_NAME properly
