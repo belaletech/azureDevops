@@ -15,8 +15,10 @@ else:
     with open(json_file) as data_file:
         CONFIG = json.load(data_file)
 
-username = os.environ["LT_USERNAME"]
-authkey = os.environ["LT_ACCESS_KEY"]
+# username = os.environ["LT_USERNAME"]
+# authkey = os.environ["LT_ACCESS_KEY"]
+username="belalahmad"
+authkey="LT_UzeFPtk5kc9Z9eQSKXiqztgW3Tkx7lUfh0phyHFXWFQjbfp"
 
 
 
