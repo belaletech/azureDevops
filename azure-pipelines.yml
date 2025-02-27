@@ -21,8 +21,12 @@ steps:
   displayName: 'Set LambdaTest Credentials'
 
 - script: |
+    behave features/test.feature
+  displayName: 'Run Behave Tests'
+
+- script: |
     behave features/test.feature --format html --outfile reports/test_report.html
-  displayName: 'Run Behave Tests with HTML Report'
+  displayName: 'Generate HTML Report'
 
 - task: Lambdatest.lambda-azure-pipeline-extention.showResults-task.LambdatestResults@1
   displayName: 'LambdaTest Results'
