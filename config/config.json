@@ -3,7 +3,7 @@
     "platform": "Windows 10",
     "browserName": "chrome",
     "version": "latest",
-    "build": "${LT_BUILD_NAME}",
+    "build": "$(LT_BUILD_NAME)",
     "name": "Behave Sample Test new"
   }
 ]

@@ -23,10 +23,12 @@ def run_behave_test(env, index=0):
     :param index:
     :return:
     """
+    report_path = f"reports/report_{index}.html"
     if env == "jenkins":
         sh('INDEX=%s env=%s behave features/test.feature ' % (index, env,))
     else:
-        sh('INDEX=%s env=%s behave features/test.feature ' % (index, env,))
+        sh(f'INDEX={index} env={env} behave features/test.feature --format html --outfile {report_path}')
+        print(f"✅ HTML Report Generated: {report_path}")
 
 
 @task
