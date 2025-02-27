@@ -10,7 +10,7 @@ print(f'LT_BUILD_NAME: {os.environ.get("LT_BUILD_NAME")}')
 
 INDEX = int(os.environ['INDEX']) if 'INDEX' in os.environ else 0
 #✅ Fix: Handle missing LT_BUILD_NAME properly
-lt_build_name = os.getenv("LT_BUILD_NAME", "Default_Build_Name")
+lt_build_name = os.getenv("LT_BUILD_NAME")
 print(f"Using LT_BUILD_NAME: {lt_build_name}")
 if os.environ.get("env") == "jenkins":
     desired_cap_dict = os.environ["LT_BROWSERS"]
