@@ -25,7 +25,7 @@ else:
         CONFIG = []
 
 username = os.getenv("LT_USERNAME", "belalahmad")
-authkey = os.getenv("LT_ACCESS_KEY", "LT_UzeFPtk5kc9Z9eQSKXiqztgW3Tkx7lUfh0phyHFXWFQjbfp")
+authkey = os.getenv("LT_ACCESS_KEY", "LT_7VDCei73IDbSY28Yxz9fbocgnw9Ja4ryhwGP4HccHy967Rc")
 
 
 def before_scenario(context, scenario):
